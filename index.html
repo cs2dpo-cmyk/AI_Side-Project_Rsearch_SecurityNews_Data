@@ -570,9 +570,9 @@
                 type: 'bar',
                 data: {
                     labels: [
-                        'Vulnerabilities & Advisories\n(系統漏洞與修補對策)',
-                        'Malware & Active Attacks\n(惡意威脅與主動攻擊)',
-                        'Research & Governance\n(前瞻研究與平台治理)'
+                        ['Vulnerabilities & Advisories\n(系統漏洞與修補對策)'],
+                        ['Malware & Active Attacks\n(惡意威脅與主動攻擊)'],
+                        ['Research & Governance\n(前瞻研究與平台治理)']
                     ],
                     datasets: [
                         {
@@ -609,7 +609,12 @@
                     scales: {
                         x: {
                             grid: { color: '#1F2937' },
-                            ticks: { color: '#9CA3AF', font: { size: 10 } }
+                            ticks: {
+                            color: '#9CA3AF',
+                            font: { size: 10 } ,
+                            maxRotation:0,
+                            autoSkip: false
+                        }
                         },
                         y: {
                             grid: { color: '#1F2937' },
